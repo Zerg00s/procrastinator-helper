@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procrastinator Helper</title>
+</head>
+
+<body>
+    <h1>Loading...</h1>
+    <script>
+        const websites = [
+            'https://medium.com',
+            'https://www.linkedin.com/learning',
+            'https://www.pluralsight.com',
+            'https://sharepoint.stackexchange.com',
+        ];
+
+        function redirect() {
+            const index = Math.floor(Math.random() * websites.length);
+
+            window.location.href = websites[index];
+        }
+        // wait for 3 seconds before redirecting
+        setTimeout(redirect, 3000);
+    </script>
+</body>
+
+</html>
